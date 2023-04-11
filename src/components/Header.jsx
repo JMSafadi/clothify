@@ -14,17 +14,17 @@ const Header = () => {
     window.addEventListener('scroll', () => {
       window.scrollY > 60 ? setIsActive(true) : setIsActive(false)
     })
-  }, []);
+  }, [])
 
   return (
-    <header className={`${isActive ? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all`}>
+    <header className={`${isActive ? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all lg:px-15`}>
       <div className='container mx-auto flex items-center justify-between h-full'>
       <Link to={'/'}>
         <div>
           <img className='w-[40px]' src={Logo} alt='logo' />
         </div>
       </Link>
-      <h1>Clothify</h1>
+      <h1 className='text-3xl'>Clothify</h1>
       <div onClick={() => setIsOpen(!isOpen)} className='cursor-pointer flex relative'>
         <BsBag className='text-2xl' />
         <div className='bg-red-500 absolute -right-2 -bottom-2 text-[12px] w-[18px] h-[18px] text-white rounded-full flex justify-center items-center'>

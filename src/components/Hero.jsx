@@ -1,6 +1,5 @@
 import React from 'react'
 import WomanImg from '../img/woman_hero.png'
-// import  from '../img/bg_hero.svg.png'
 import { Link } from 'react-router-dom'
 
 const Hero = () => {
@@ -13,7 +12,7 @@ const Hero = () => {
           </div>
           <h1 className='text-[70px] font-light leading-[1.1] mb-4'>
             AUTUMN SALE STYLISH<br/>
-            <span className='font-semibold'>WOMENS</span>
+            <span className='font-semibold'>WOMENS & MEN</span>
           </h1>
           <Link to={'/'} className='self-start uppercase font-semibold border-b-2 border-primary'>Discover More</Link>
         </div>
