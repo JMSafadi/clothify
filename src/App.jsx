@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div className="overflow-hidden">
-      <h1 className="underline">Clothify</h1>
       <Router>
       <Header/>
         <Routes>
